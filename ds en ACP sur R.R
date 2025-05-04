@@ -1,0 +1,6 @@
+library(tidyverse)
+library(readxl)
+base = read_excel("D:/TP2.xlsx")
+view(base)
+mat_corr = cor(base$PNB, base$`EV 97`)
+view(mat_corr)
